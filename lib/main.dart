@@ -11,7 +11,8 @@ class AspenTravelApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Montserrat'),
       onGenerateRoute: onGenerateRoute,
       initialRoute: SplashView.routeName,
       debugShowCheckedModeBanner: false,
