@@ -1,4 +1,4 @@
-import 'package:aspen_travel_app/constants.dart';
+import 'package:aspen_travel_app/core/utils/color_data.dart';
 import 'package:aspen_travel_app/core/utils/text_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -18,13 +18,16 @@ class CustomButton extends StatelessWidget {
           visualDensity: const VisualDensity(
             vertical: VisualDensity.minimumDensity,
           ),
-          backgroundColor: kPrimaryColor,
+          backgroundColor: ColorData.kPrimaryColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
           ),
         ),
         onPressed: onPressed,
-        child: Text(title, style: TextStyles.bold16),
+        child: Text(
+          title,
+          style: TextStyles.bold16.copyWith(color: Colors.white),
+        ),
       ),
     );
   }

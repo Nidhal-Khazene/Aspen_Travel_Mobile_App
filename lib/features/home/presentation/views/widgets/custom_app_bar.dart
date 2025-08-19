@@ -8,30 +8,43 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            "Explore",
-            style: TextStyles.regular14.copyWith(color: Colors.black),
-          ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Icon(
-                Icons.location_on_rounded,
-                color: ColorData.kPrimaryColor,
-                size: 16,
-              ),
-              const SizedBox(width: 6),
               Text(
-                "Aspen, USA",
-                style: TextStyles.regular12.copyWith(
-                  color: const Color(0xFF5F5F5F),
-                ),
+                "Explore",
+                style: TextStyles.regular14.copyWith(color: Colors.black),
               ),
-              const SizedBox(width: 0.5),
-              const Icon(Icons.keyboard_arrow_down, color: Color(0xFF5F5F5F)),
+              Row(
+                children: [
+                  const Icon(
+                    Icons.location_on_rounded,
+                    color: ColorData.kPrimaryColor,
+                    size: 16,
+                  ),
+                  const SizedBox(width: 6),
+                  Text(
+                    "Aspen, USA",
+                    style: TextStyles.regular12.copyWith(
+                      color: const Color(0xFF5F5F5F),
+                      fontFamily: "CircularXX",
+                    ),
+                  ),
+                  const SizedBox(width: 0.5),
+                  const Icon(
+                    Icons.keyboard_arrow_down,
+                    color: Color(0xFF5F5F5F),
+                  ),
+                ],
+              ),
             ],
+          ),
+          Text(
+            "Aspen",
+            style: TextStyles.medium32.copyWith(color: Colors.black),
           ),
         ],
       ),
