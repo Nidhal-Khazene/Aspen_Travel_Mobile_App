@@ -1,12 +1,19 @@
+import 'package:aspen_travel_app/constants.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
+
   static const routeName = "homeView";
 
   @override
   Widget build(BuildContext context) {
-    return const HomeViewBody();
+    return const Scaffold(
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: kHorizontalPaddingHomeView),
+        child: HomeViewBody(),
+      ),
+    );
   }
 }

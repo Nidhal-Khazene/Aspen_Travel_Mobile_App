@@ -14,14 +14,10 @@ class SplashViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        SizedBox(
-          width: double.infinity,
-          height: double.infinity,
-          child: Positioned.fill(
-            child: Image.asset(
-              Assets.assetsImagesSplashBackground,
-              fit: BoxFit.cover,
-            ),
+        SizedBox.expand(
+          child: Image.asset(
+            Assets.assetsImagesSplashBackground,
+            fit: BoxFit.cover,
           ),
         ),
         Positioned(
@@ -31,7 +27,9 @@ class SplashViewBody extends StatelessWidget {
           child: SvgPicture.asset(Assets.assetsImagesAspenLogo),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: kHorizontalPadding),
+          padding: const EdgeInsets.symmetric(
+            horizontal: kHorizontalPaddingSplashView,
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.start,
