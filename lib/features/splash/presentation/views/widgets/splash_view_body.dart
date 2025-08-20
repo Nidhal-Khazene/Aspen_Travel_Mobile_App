@@ -34,9 +34,9 @@ class SplashViewBody extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Plan your", style: TextStyles.normal24),
-              const Text("Luxurious", style: TextStyles.medium40),
-              const Text("Vacation", style: TextStyles.medium40),
+              const Text("Plan your", style: StylesData.normal24),
+              const Text("Luxurious", style: StylesData.medium40),
+              const Text("Vacation", style: StylesData.medium40),
               const SizedBox(height: 24),
               CustomButton(
                 title: "Explore",

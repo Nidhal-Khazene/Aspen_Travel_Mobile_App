@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-abstract class TextStyles {
+abstract class StylesData {
   static const TextStyle normal24 = TextStyle(
     fontSize: 24,
     fontWeight: FontWeight.normal,
@@ -21,6 +21,10 @@ abstract class TextStyles {
     fontSize: 12,
     fontWeight: FontWeight.w400,
   );
+  static const TextStyle medium12 = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+  );
   static const TextStyle medium13 = TextStyle(
     fontSize: 13,
     fontWeight: FontWeight.w500,
@@ -28,5 +32,9 @@ abstract class TextStyles {
   static const TextStyle medium32 = TextStyle(
     fontSize: 32,
     fontWeight: FontWeight.w500,
+  );
+  static const TextStyle semiBold18 = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
   );
 }

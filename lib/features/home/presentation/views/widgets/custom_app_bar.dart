@@ -15,7 +15,7 @@ class CustomAppBar extends StatelessWidget {
           children: [
             Text(
               "Explore",
-              style: TextStyles.regular14.copyWith(color: Colors.black),
+              style: StylesData.regular14.copyWith(color: Colors.black),
             ),
             Row(
               children: [
@@ -27,7 +27,7 @@ class CustomAppBar extends StatelessWidget {
                 const SizedBox(width: 6),
                 Text(
                   "Aspen, USA",
-                  style: TextStyles.regular12.copyWith(
+                  style: StylesData.regular12.copyWith(
                     color: const Color(0xFF5F5F5F),
                     fontFamily: "CircularXX",
                   ),
@@ -38,7 +38,7 @@ class CustomAppBar extends StatelessWidget {
             ),
           ],
         ),
-        Text("Aspen", style: TextStyles.medium32.copyWith(color: Colors.black)),
+        Text("Aspen", style: StylesData.medium32.copyWith(color: Colors.black)),
       ],
     );
   }

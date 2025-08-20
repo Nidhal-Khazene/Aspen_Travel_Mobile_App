@@ -19,7 +19,7 @@ class CustomSearchBar extends StatelessWidget {
           ),
         ),
         hintText: 'Find things to do',
-        hintStyle: TextStyles.medium13.copyWith(
+        hintStyle: StylesData.medium13.copyWith(
           color: const Color(0xFFB7B7B7),
           fontFamily: 'CircularXX',
         ),
