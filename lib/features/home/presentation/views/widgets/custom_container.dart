@@ -1,5 +1,6 @@
 import 'package:aspen_travel_app/core/utils/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomContainer extends StatelessWidget {
   const CustomContainer({super.key, required this.text, this.icon});
@@ -14,9 +15,16 @@ class CustomContainer extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(59)),
       ),
       child: Row(
-        spacing: 4,
+        mainAxisSize: MainAxisSize.min,
+        spacing: 8,
         children: [
-          SizedBox(height: 16, width: 16, child: Icon(icon)),
+          Visibility(
+            visible: icon != null,
+            child: FaIcon(icon, size: 12, color: const Color(0xffF8D675)),
+          ),
+          // icon != null
+          //     ? FaIcon(icon, size: 12, color: const Color(0xffF8D675))
+          //     : const SizedBox.shrink(),
           Text(
             text,
             style: StylesData.medium12.copyWith(fontFamily: "CircularXX"),

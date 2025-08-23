@@ -1,4 +1,5 @@
 import 'package:aspen_travel_app/core/utils/assets.dart';
+import 'package:aspen_travel_app/features/home/presentation/views/widgets/feature_card_details.dart';
 import 'package:flutter/material.dart';
 
 class CustomFeatureCard extends StatelessWidget {
@@ -6,7 +7,7 @@ class CustomFeatureCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 188,
       height: 240,
       child: Stack(
@@ -24,6 +25,13 @@ class CustomFeatureCard extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
+          ),
+          const Positioned(
+            right: 0,
+            top: 170,
+            left: 12,
+            bottom: 0,
+            child: FeatureCardDetails(),
           ),
         ],
       ),

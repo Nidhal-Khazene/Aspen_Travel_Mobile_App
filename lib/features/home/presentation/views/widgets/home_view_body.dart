@@ -6,8 +6,6 @@ import 'package:aspen_travel_app/features/home/presentation/views/widgets/custom
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/custom_search_bar.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/text_styles.dart';
-
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
 
