@@ -11,7 +11,7 @@ class FeatureCardDetails extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CustomContainer(text: "Alley Palace"),
-        SizedBox(height: 10),
+        SizedBox(height: 6),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
