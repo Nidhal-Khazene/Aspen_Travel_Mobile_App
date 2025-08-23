@@ -1,4 +1,3 @@
-import 'package:aspen_travel_app/core/utils/color_data.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/build_popular_see_all_row.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/category_chips.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/custom_app_bar.dart';

@@ -28,7 +28,7 @@ class CustomFeatureCard extends StatelessWidget {
           ),
           const Positioned(
             right: 0,
-            top: 170,
+            top: 175,
             left: 12,
             bottom: 0,
             child: FeatureCardDetails(),
