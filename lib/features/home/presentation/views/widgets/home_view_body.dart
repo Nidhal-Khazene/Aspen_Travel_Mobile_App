@@ -24,9 +24,14 @@ class HomeViewBody extends StatelessWidget {
         const SizedBox(height: 12),
         const FeatureListViewBuilder(),
         const SizedBox(height: 32),
-        Text(
-          "Recommended",
-          style: StylesData.semiBold18.copyWith(color: const Color(0xff232323)),
+        Align(
+          alignment: Alignment.topLeft,
+          child: Text(
+            "Recommended",
+            style: StylesData.semiBold18.copyWith(
+              color: const Color(0xff232323),
+            ),
+          ),
         ),
       ],
     );
