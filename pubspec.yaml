@@ -65,6 +65,7 @@ flutter:
      - assets/images/splash_background.png
      - assets/images/aspen_logo.svg
      - assets/images/Search.svg
+     - assets/images/test_image.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

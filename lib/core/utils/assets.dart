@@ -42,6 +42,10 @@ class Assets {
   /// assets/images/splash_background.png
   static const String assetsImagesSplashBackground = "assets/images/splash_background.png";
 
+  /// Assets for assetsImagesTestImage
+  /// assets/images/test_image.png
+  static const String assetsImagesTestImage = "assets/images/test_image.png";
+
   /// Assets for assetsImagesTravelLogoIconLauncher
   /// assets/images/travel_logo_icon_launcher.png
   static const String assetsImagesTravelLogoIconLauncher = "assets/images/travel_logo_icon_launcher.png";

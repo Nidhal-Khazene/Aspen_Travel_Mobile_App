@@ -2,6 +2,7 @@ import 'package:aspen_travel_app/core/utils/color_data.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/build_popular_see_all_row.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/category_chips.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/custom_app_bar.dart';
+import 'package:aspen_travel_app/features/home/presentation/views/widgets/custom_feature_card.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/custom_search_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -22,6 +23,8 @@ class HomeViewBody extends StatelessWidget {
         CategoryChips(),
         SizedBox(height: 32),
         BuildPopularSeeAllRow(),
+        SizedBox(height: 12),
+        CustomFeatureCard(),
       ],
     );
   }
