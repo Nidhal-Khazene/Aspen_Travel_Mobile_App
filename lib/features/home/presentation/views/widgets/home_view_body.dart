@@ -1,5 +1,5 @@
-import 'package:aspen_travel_app/core/utils/text_styles.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/build_popular_see_all_row.dart';
+import 'package:aspen_travel_app/features/home/presentation/views/widgets/build_recommended_line.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/category_chips.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/custom_app_bar.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/custom_search_bar.dart';
@@ -11,28 +11,20 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        const SizedBox(height: 44),
-        const CustomAppBar(),
-        const SizedBox(height: 24),
-        const CustomSearchBar(),
-        const SizedBox(height: 32),
-        const CategoryChips(),
-        const SizedBox(height: 32),
-        const BuildPopularSeeAllRow(),
-        const SizedBox(height: 12),
-        const FeatureListViewBuilder(),
-        const SizedBox(height: 32),
-        Align(
-          alignment: Alignment.topLeft,
-          child: Text(
-            "Recommended",
-            style: StylesData.semiBold18.copyWith(
-              color: const Color(0xff232323),
-            ),
-          ),
-        ),
+        SizedBox(height: 44),
+        CustomAppBar(),
+        SizedBox(height: 24),
+        CustomSearchBar(),
+        SizedBox(height: 32),
+        CategoryChips(),
+        SizedBox(height: 32),
+        BuildPopularSeeAllRow(),
+        SizedBox(height: 12),
+        FeatureListViewBuilder(),
+        SizedBox(height: 32),
+        BuildRecommendedLine(),
       ],
     );
   }
