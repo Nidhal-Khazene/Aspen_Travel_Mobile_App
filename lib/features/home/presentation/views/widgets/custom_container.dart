@@ -1,10 +1,15 @@
-import 'package:aspen_travel_app/core/utils/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomContainer extends StatelessWidget {
-  const CustomContainer({super.key, required this.text, this.icon});
+  const CustomContainer({
+    super.key,
+    required this.text,
+    this.icon,
+    this.textStyle,
+  });
   final String text;
+  final TextStyle? textStyle;
   final IconData? icon;
   @override
   Widget build(BuildContext context) {
@@ -25,10 +30,7 @@ class CustomContainer extends StatelessWidget {
           // icon != null
           //     ? FaIcon(icon, size: 12, color: const Color(0xffF8D675))
           //     : const SizedBox.shrink(),
-          Text(
-            text,
-            style: StylesData.medium12.copyWith(fontFamily: "CircularXX"),
-          ),
+          Text(text, style: textStyle),
         ],
       ),
     );
