@@ -4,6 +4,7 @@ import 'package:aspen_travel_app/features/home/presentation/views/widgets/catego
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/custom_app_bar.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/custom_search_bar.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/feature_list_view_builder.dart';
+import 'package:aspen_travel_app/features/home/presentation/views/widgets/recommended_card_item.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -11,20 +12,27 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        SizedBox(height: 44),
-        CustomAppBar(),
-        SizedBox(height: 24),
-        CustomSearchBar(),
-        SizedBox(height: 32),
-        CategoryChips(),
-        SizedBox(height: 32),
-        BuildPopularSeeAllRow(),
-        SizedBox(height: 12),
-        FeatureListViewBuilder(),
-        SizedBox(height: 32),
-        BuildRecommendedLine(),
+    return CustomScrollView(
+      slivers: [
+        SliverList(
+          delegate: SliverChildListDelegate(const [
+            SizedBox(height: 44),
+            CustomAppBar(),
+            SizedBox(height: 24),
+            CustomSearchBar(),
+            SizedBox(height: 32),
+            CategoryChips(),
+            SizedBox(height: 32),
+            BuildPopularSeeAllRow(),
+            SizedBox(height: 12),
+            FeatureListViewBuilder(),
+            SizedBox(height: 32),
+            BuildRecommendedLine(),
+            SizedBox(height: 12),
+            RecommendedCardItem(),
+            SizedBox(height: 50),
+          ]),
+        ),
       ],
     );
   }
