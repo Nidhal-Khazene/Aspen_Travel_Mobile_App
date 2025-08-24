@@ -25,11 +25,16 @@ class CustomSearchBar extends StatelessWidget {
         ),
         fillColor: const Color(0xFFF3F8FE),
         filled: true,
-        enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(width: 1, color: Colors.transparent),
-          borderRadius: BorderRadius.circular(24),
-        ),
+        enabledBorder: buildOutlineInputBorder(),
+        focusedBorder: buildOutlineInputBorder(),
       ),
+    );
+  }
+
+  OutlineInputBorder buildOutlineInputBorder() {
+    return OutlineInputBorder(
+      borderSide: const BorderSide(width: 1, color: Colors.transparent),
+      borderRadius: BorderRadius.circular(24),
     );
   }
 }
