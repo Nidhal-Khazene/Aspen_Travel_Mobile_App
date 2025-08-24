@@ -18,13 +18,9 @@ class FeatureCardItem extends StatelessWidget {
               right: 0,
               bottom: 0,
               top: 0,
-              child: SizedBox(
-                width: 188,
-                height: 240,
-                child: Image.asset(
-                  Assets.assetsImagesTestImage,
-                  fit: BoxFit.cover,
-                ),
+              child: Image.asset(
+                Assets.assetsImagesTestImage,
+                fit: BoxFit.cover,
               ),
             ),
             const Positioned(
