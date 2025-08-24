@@ -19,39 +19,41 @@ class RecommendedCardItem extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            AspectRatio(
-              aspectRatio: 7 / 4,
-              child: Stack(
-                clipBehavior: Clip.none,
-                children: [
-                  Positioned(
-                    left: 0,
-                    right: 0,
-                    top: 0,
-                    bottom: 0,
-                    child: Image.asset(
-                      Assets.assetsImagesTestImage2,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Positioned(
-                    right: 12,
-                    bottom: -12,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(24),
-                        color: Colors.white,
+            Expanded(
+              child: AspectRatio(
+                aspectRatio: 7 / 4,
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      top: 0,
+                      bottom: 0,
+                      child: Image.asset(
+                        Assets.assetsImagesTestImage2,
+                        fit: BoxFit.fill,
                       ),
-                      child: const Padding(
-                        padding: EdgeInsets.all(3),
-                        child: CustomContainer(
-                          text: "4N/5D",
-                          textStyle: StylesData.semiBold10,
+                    ),
+                    Positioned(
+                      right: 12,
+                      bottom: -12,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(24),
+                          color: Colors.white,
+                        ),
+                        child: const Padding(
+                          padding: EdgeInsets.all(3),
+                          child: CustomContainer(
+                            text: "4N/5D",
+                            textStyle: StylesData.semiBold10,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             const SizedBox(height: 3),

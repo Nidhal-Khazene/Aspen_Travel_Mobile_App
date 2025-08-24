@@ -15,7 +15,7 @@ class FeatureListViewBuilder extends StatelessWidget {
         itemCount: 10,
         itemBuilder: (context, index) {
           return const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8),
+            padding: EdgeInsets.only(right: 8),
             child: FeatureCardItem(),
           );
         },
