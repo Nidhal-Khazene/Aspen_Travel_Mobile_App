@@ -60,10 +60,10 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
-    - assets/images/Heart.svg
-    - assets/images/Home.svg
+    - assets/images/heart.svg
+    - assets/images/home.svg
+    - assets/images/ticket.svg
     - assets/images/profile.svg
-    - assets/images/Ticket.svg
     - assets/images/splash_background.png
     - assets/images/aspen_logo.svg
     - assets/images/Search.svg
@@ -99,7 +99,7 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 flutter_assets:
-  assets_path: assets/
+  assets_path: assets/images
   output_path: lib/core/utils
   filename: assets.dart
 
