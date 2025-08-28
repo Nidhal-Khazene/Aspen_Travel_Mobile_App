@@ -5,6 +5,14 @@ abstract class StylesData {
     fontSize: 10,
     fontWeight: FontWeight.w400,
   );
+  static const TextStyle bold14 = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w700,
+  );
+  static const TextStyle semiBold24 = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.w600,
+  );
   static const TextStyle medium14 = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w500,

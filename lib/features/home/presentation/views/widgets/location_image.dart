@@ -46,16 +46,28 @@ class LocationImage extends StatelessWidget {
             ),
           ),
         ),
-        const Positioned(
+        Positioned(
           bottom: -20,
           right: 14,
-          child: CircleAvatar(
-            backgroundColor: Color(0xffF2F7FD),
-            minRadius: 22,
-            child: FaIcon(
-              FontAwesomeIcons.solidHeart,
-              size: 24,
-              color: Colors.red,
+          child: Container(
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.1),
+                  spreadRadius: 2,
+                  blurRadius: 25,
+                  offset: const Offset(0, -2),
+                ),
+              ],
+            ),
+            child: const CircleAvatar(
+              backgroundColor: Color(0xffF2F7FD),
+              minRadius: 22,
+              child: FaIcon(
+                FontAwesomeIcons.solidHeart,
+                size: 24,
+                color: Colors.red,
+              ),
             ),
           ),
         ),
