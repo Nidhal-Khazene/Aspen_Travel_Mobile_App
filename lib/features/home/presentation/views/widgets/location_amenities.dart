@@ -20,7 +20,11 @@ class LocationAmenities extends StatelessWidget {
         const Row(
           children: [
             AmenityBox(
-              amenity: Icon(Icons.wifi, color: ColorData.kNavIconColor),
+              amenity: Icon(
+                Icons.wifi,
+                color: ColorData.kNavIconColor,
+                size: 36,
+              ),
               title: "Wifi",
             ),
             SizedBox(width: 5),

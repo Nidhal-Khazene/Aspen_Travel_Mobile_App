@@ -23,8 +23,8 @@ class AmenityBox extends StatelessWidget {
           amenity,
           Text(
             title,
-            style: StylesData.semiBold10.copyWith(
-              color: ColorData.kNavIconColor,g
+            style: StylesData.bold10.copyWith(
+              color: ColorData.kNavIconColor,
               fontFamily: "CircularXX",
             ),
           ),
