@@ -9,20 +9,23 @@ class LocationDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            LocationImage(),
-            SizedBox(height: 32),
-            LocationInformation(),
-            SizedBox(height: 32),
-            LocationAmenities(),
-            SizedBox(height: 29),
-            LocationBook(),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: CustomScrollView(
+          physics: const BouncingScrollPhysics(),
+          slivers: [
+            SliverList(
+              delegate: SliverChildListDelegate([
+                const LocationImage(),
+                const SizedBox(height: 32),
+                const LocationInformation(),
+                const SizedBox(height: 32),
+                const LocationAmenities(),
+                const SizedBox(height: 29),
+                const LocationBook(),
+              ]),
+            ),
           ],
         ),
       ),
