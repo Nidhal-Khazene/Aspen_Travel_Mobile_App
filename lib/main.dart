@@ -14,7 +14,7 @@ class AspenTravelApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         fontFamily: 'Montserrat',
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: const Color(0xffE7E8EA),
         textTheme: const TextTheme(
           bodyLarge: TextStyle(color: Colors.white),
           bodyMedium: TextStyle(color: Colors.white),
