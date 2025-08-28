@@ -1,3 +1,4 @@
+import 'package:aspen_travel_app/features/home/presentation/views/widgets/location_details_view.dart';
 import 'package:aspen_travel_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,10 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
     case CustomBottomNavigationBar.routeName:
       return MaterialPageRoute(
         builder: (context) => const CustomBottomNavigationBar(),
+      );
+    case LocationDetailsView.routeName:
+      return MaterialPageRoute(
+        builder: (context) => const LocationDetailsView(),
       );
     default:
       return MaterialPageRoute(builder: (context) => const SplashView());
