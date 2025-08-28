@@ -1,3 +1,4 @@
+import 'package:aspen_travel_app/features/home/presentation/views/widgets/location_image.dart';
 import 'package:flutter/material.dart';
 
 class LocationDetailsViewBody extends StatelessWidget {
@@ -5,6 +6,14 @@ class LocationDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const SafeArea(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: [LocationImage(), SizedBox(height: 32)],
+        ),
+      ),
+    );
   }
 }

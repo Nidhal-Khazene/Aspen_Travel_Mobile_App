@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-  
+
   /// Assets for assetsImagesAspenLogo
   /// assets/images/aspen_logo.svg
   static const String assetsImagesAspenLogo = "assets/images/aspen_logo.svg";
@@ -24,7 +24,8 @@ class Assets {
 
   /// Assets for assetsImagesSplashBackground
   /// assets/images/splash_background.png
-  static const String assetsImagesSplashBackground = "assets/images/splash_background.png";
+  static const String assetsImagesSplashBackground =
+      "assets/images/splash_background.png";
 
   /// Assets for assetsImagesTestImage
   /// assets/images/test_image.png
@@ -34,12 +35,17 @@ class Assets {
   /// assets/images/test_image_2.png
   static const String assetsImagesTestImage2 = "assets/images/test_image_2.png";
 
+  /// Assets for assetsImagesTestImage3
+  /// assets/images/test_image_3.png
+  static const String assetsImagesTestImage3 =
+      "assets/images/test_image_3.webp";
+
   /// Assets for assetsImagesTicket
   /// assets/images/ticket.svg
   static const String assetsImagesTicket = "assets/images/ticket.svg";
 
   /// Assets for assetsImagesTravelLogoIconLauncher
   /// assets/images/travel_logo_icon_launcher.png
-  static const String assetsImagesTravelLogoIconLauncher = "assets/images/travel_logo_icon_launcher.png";
+  static const String assetsImagesTravelLogoIconLauncher =
+      "assets/images/travel_logo_icon_launcher.png";
 }
-
