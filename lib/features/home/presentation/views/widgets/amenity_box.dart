@@ -21,6 +21,7 @@ class AmenityBox extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           amenity,
+          const SizedBox(height: 10,),
           Text(
             title,
             style: StylesData.bold10.copyWith(

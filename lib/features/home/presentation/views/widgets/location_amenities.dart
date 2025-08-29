@@ -1,5 +1,6 @@
 import 'package:aspen_travel_app/features/home/presentation/views/widgets/amenity_box.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../../../core/utils/color_data.dart';
 import '../../../../../core/utils/text_styles.dart';
@@ -20,14 +21,40 @@ class LocationAmenities extends StatelessWidget {
         const Row(
           children: [
             AmenityBox(
-              amenity: Icon(
-                Icons.wifi,
+              amenity: FaIcon(
+                FontAwesomeIcons.wifi,
                 color: ColorData.kNavIconColor,
-                size: 36,
+                size: 32,
               ),
               title: "Wifi",
             ),
             SizedBox(width: 5),
+            AmenityBox(
+              amenity: FaIcon(
+                FontAwesomeIcons.utensils,
+                color: ColorData.kNavIconColor,
+                size: 32,
+              ),
+              title: "Dinner",
+            ),
+            SizedBox(width: 5),
+            AmenityBox(
+              amenity: FaIcon(
+                FontAwesomeIcons.bath,
+                color: ColorData.kNavIconColor,
+                size: 32,
+              ),
+              title: "Tub",
+            ),
+            SizedBox(width: 5),
+            AmenityBox(
+              amenity: FaIcon(
+                FontAwesomeIcons.waterLadder,
+                color: ColorData.kNavIconColor,
+                size: 32,
+              ),
+              title: "Pool",
+            ),
           ],
         ),
       ],
