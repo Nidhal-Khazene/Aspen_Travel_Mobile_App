@@ -5,6 +5,10 @@ abstract class StylesData {
     fontSize: 10,
     fontWeight: FontWeight.w700,
   );
+  static const TextStyle bold24 = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.w700,
+  );
   static const TextStyle regular10 = TextStyle(
     fontSize: 10,
     fontWeight: FontWeight.w400,
