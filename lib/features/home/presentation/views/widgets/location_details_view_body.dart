@@ -24,6 +24,7 @@ class LocationDetailsViewBody extends StatelessWidget {
                 const LocationAmenities(),
                 const SizedBox(height: 29),
                 const LocationBook(),
+                const SizedBox(height: 4),
               ]),
             ),
           ],
