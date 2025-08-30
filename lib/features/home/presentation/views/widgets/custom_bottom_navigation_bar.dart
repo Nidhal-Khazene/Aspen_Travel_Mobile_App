@@ -3,6 +3,7 @@ import 'package:aspen_travel_app/core/utils/color_data.dart';
 import 'package:aspen_travel_app/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
   const CustomBottomNavigationBar({super.key});
@@ -18,9 +19,9 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
   int _selectedIndex = 0;
   final List<Widget> screens = const [
     HomeView(),
-    CustomContainerTest(text: "Ticket Screen"),
-    CustomContainerTest(text: "Favorite Screen"),
-    CustomContainerTest(text: "Profile Screen"),
+    HomeView(),
+    HomeView(),
+    HomeView(),
   ];
 
   @override
@@ -74,70 +75,45 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
                 label: '',
               ),
               NavigationDestination(
-                icon: SvgPicture.asset(
-                  Assets.assetsImagesTicket,
-                  height: 18,
-                  width: 24,
-                  colorFilter: ColorFilter.mode(
-                    _selectedIndex == 1
-                        ? ColorData.kPrimaryColor
-                        : ColorData.kNavIconColor,
-                    BlendMode.srcIn,
-                  ),
-                ),
+                icon: _selectedIndex == 1
+                    ? const FaIcon(
+                        FontAwesomeIcons.ticket,
+                        color: ColorData.kPrimaryColor,
+                      )
+                    : SvgPicture.asset(
+                        Assets.assetsImagesTicket,
+                        height: 22,
+                        width: 28,
+                      ),
                 label: "",
               ),
               NavigationDestination(
-                icon: SvgPicture.asset(
-                  Assets.assetsImagesHeart,
-                  height: 18,
-                  width: 24,
-                  colorFilter: ColorFilter.mode(
-                    _selectedIndex == 2
-                        ? ColorData.kPrimaryColor
-                        : ColorData.kNavIconColor,
-                    BlendMode.srcIn,
-                  ),
-                ),
+                icon: _selectedIndex == 2
+                    ? const FaIcon(
+                        FontAwesomeIcons.solidHeart,
+                        color: ColorData.kPrimaryColor,
+                      )
+                    : SvgPicture.asset(
+                        Assets.assetsImagesHeart,
+                        height: 22,
+                        width: 28,
+                      ),
                 label: '',
               ),
               NavigationDestination(
-                icon: SvgPicture.asset(
-                  Assets.assetsImagesProfile,
-                  height: 22,
-                  width: 22,
-                  colorFilter: ColorFilter.mode(
-                    _selectedIndex == 3
-                        ? ColorData.kPrimaryColor
-                        : ColorData.kNavIconColor,
-                    BlendMode.srcIn,
-                  ),
-                ),
+                icon: _selectedIndex == 3
+                    ? const FaIcon(
+                        FontAwesomeIcons.solidUser,
+                        color: ColorData.kPrimaryColor,
+                      )
+                    : SvgPicture.asset(
+                        Assets.assetsImagesProfile,
+                        height: 22,
+                        width: 22,
+                      ),
                 label: "",
               ),
             ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class CustomContainerTest extends StatelessWidget {
-  const CustomContainerTest({super.key, required this.text});
-
-  final String text;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(
-          text,
-          style: const TextStyle(
-            fontSize: 32,
-            color: Colors.black,
-            fontFamily: "CircularXX",
           ),
         ),
       ),
