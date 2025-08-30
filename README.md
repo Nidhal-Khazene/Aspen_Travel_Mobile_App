@@ -25,12 +25,12 @@ This project is a Flutter implementation of the "Aspen Travel App" design from F
 
 ## Screenshots
 
-| Icon Launch Screen | Splash Screen |
-| :----------------: | :------------: |
+|                             Icon Launch Screen                              |                                 Splash Screen                                 |
+|:---------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
 | <img src="assets/preview/icon_launcher.png" alt="Icon Launch" width="250"/> | <img src="assets/preview/splash_screen.png" alt="Splash Screen" width="250"/> |
 
-| Home Screen | Location Details |
-| :---------: | :--------------: |
+|                                Home Screen                                |                                 Location Details                                  |
+|:-------------------------------------------------------------------------:|:---------------------------------------------------------------------------------:|
 | <img src="assets/preview/home_screen.png" alt="Home Screen" width="250"/> | <img src="assets/preview/details_screen.png" alt="Location Details" width="250"/> |
 
 
