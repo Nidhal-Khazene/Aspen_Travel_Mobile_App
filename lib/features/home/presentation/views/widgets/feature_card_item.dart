@@ -15,7 +15,7 @@ class FeatureCardItem extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(24),
         child: AspectRatio(
-          aspectRatio: 2.65 / 4,
+          aspectRatio: 2.9 / 4,
           child: Stack(
             children: [
               Positioned(
