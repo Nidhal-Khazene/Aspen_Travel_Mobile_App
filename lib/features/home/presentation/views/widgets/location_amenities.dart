@@ -28,7 +28,7 @@ class LocationAmenities extends StatelessWidget {
               ),
               title: "Wifi",
             ),
-            SizedBox(width: 5),
+            Spacer(flex: 1),
             AmenityBox(
               amenity: FaIcon(
                 FontAwesomeIcons.utensils,
@@ -37,7 +37,7 @@ class LocationAmenities extends StatelessWidget {
               ),
               title: "Dinner",
             ),
-            SizedBox(width: 5),
+            Spacer(flex: 1),
             AmenityBox(
               amenity: FaIcon(
                 FontAwesomeIcons.bath,
@@ -46,7 +46,7 @@ class LocationAmenities extends StatelessWidget {
               ),
               title: "Tub",
             ),
-            SizedBox(width: 5),
+            Spacer(flex: 1),
             AmenityBox(
               amenity: FaIcon(
                 FontAwesomeIcons.waterLadder,

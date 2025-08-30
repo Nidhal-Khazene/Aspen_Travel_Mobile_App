@@ -24,7 +24,7 @@ class FeatureCardItem extends StatelessWidget {
                 bottom: 0,
                 top: 0,
                 child: Image.asset(
-                  Assets.assetsImagesTestImage,
+                  Assets.assetsImagesTestImage3,
                   fit: BoxFit.cover,
                 ),
               ),
