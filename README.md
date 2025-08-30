@@ -3,6 +3,8 @@
 
 A travel and tourism mobile application built with Flutter, based on a UI design for "Aspen." The app allows users to explore popular destinations, view location details, and browse recommendations within Aspen.
 
+![preview](assets/preview/preview.jpg)
+
 ## UI/UX Design
 
 This project is a Flutter implementation of the "Aspen Travel App" design from Figma.
