@@ -11,7 +11,7 @@ class LocationDetailsViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         child: CustomScrollView(
           physics: const BouncingScrollPhysics(),
           slivers: [
@@ -24,7 +24,6 @@ class LocationDetailsViewBody extends StatelessWidget {
                 const LocationAmenities(),
                 const SizedBox(height: 29),
                 const LocationBook(),
-                const SizedBox(height: 4),
               ]),
             ),
           ],
