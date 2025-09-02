@@ -67,7 +67,6 @@ flutter:
     - assets/images/splash_background.png
     - assets/images/aspen_logo.svg
     - assets/images/Search.svg
-    - assets/images/test_image.png
     - assets/images/test_image_2.png
     - assets/images/test_image_3.webp
     - assets/images/star_with_shadow.svg
